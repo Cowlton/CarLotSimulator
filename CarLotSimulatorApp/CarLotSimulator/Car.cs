@@ -11,6 +11,7 @@ public class Car
     public string HonkNoise {get; set; }
     public bool IsDriveable {get; set; }
 
+    public static int numberOfCars = 0;
     public void MakeEngineNoise(string engineNoise)
     {
         Console.WriteLine($"This car goes {engineNoise}");

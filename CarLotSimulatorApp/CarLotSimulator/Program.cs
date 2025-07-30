@@ -9,6 +9,8 @@ namespace CarLotSimulator
         {
              Car car1 = new Car("2020","Honda", "Civic", "RagggggRaaahhhggg","BEEpBepp");
 
+             Car.numberOfCars++;
+             Console.WriteLine($"There is {Car.numberOfCars} car");
 
              Car car2 = new Car()
              {
@@ -19,12 +21,18 @@ namespace CarLotSimulator
                  HonkNoise = "HonKHonnk"
              };
              
+             Car.numberOfCars++;
+             Console.WriteLine($"There are {Car.numberOfCars} cars");
+             
              Car car3 = new Car();
              car3.Year = "2018";
              car3.Make = "Ford";
              car3.Model = "Fusion";
              car3.EngineNoise = "Rrrrrrrrrr";
              car3.HonkNoise = "MeeepMeeep";
+             
+             Car.numberOfCars++;
+             Console.WriteLine($"There are {Car.numberOfCars} cars");
              
              car1.MakeEngineNoise(car1.EngineNoise); 
              car2.MakeEngineNoise(car2.EngineNoise); 
